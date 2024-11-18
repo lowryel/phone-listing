@@ -1,0 +1,106 @@
+[2024-10-22 10:22:27.071] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Now listening on: http://localhost:5074
+[2024-10-22 10:22:27.135] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Application started. Press Ctrl+C to shut down.
+[2024-10-22 10:22:27.140] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Hosting environment: Development
+[2024-10-22 10:22:27.142] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Content root path: C:\Users\lowry\Dev\Csharp\phone-project\PhoneListingAPI
+[2024-10-22 10:28:13.751] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (102ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Active], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Username], [l].[ListingId], [l].[CreatedAt], [l].[Description], [l].[Price], [l].[Title], [l].[UserId]
+FROM [Users] AS [u]
+LEFT JOIN [Listings] AS [l] ON [u].[UserId] = [l].[UserId]
+ORDER BY [u].[UserId]
+[2024-10-22 10:28:13.874] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - User Information
+[2024-10-22 10:34:59.799] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (36ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Active], [t].[Email], [t].[IsDeleted], [t].[PasswordHash], [t].[Username], [l].[ListingId], [l].[CreatedAt], [l].[Description], [l].[Price], [l].[Title], [l].[UserId]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Active], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[UserId] = @__userId_0
+) AS [t]
+LEFT JOIN [Listings] AS [l] ON [t].[UserId] = [l].[UserId]
+ORDER BY [t].[UserId]
+[2024-10-22 10:34:59.808] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - User -0
+[2024-10-22 10:34:59.809] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - Environmental Variable: 
+[2024-10-22 10:34:59.810] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - user information: d352dac0-4501-40c6-6300-08dcf1eb7951
+[2024-10-22 10:35:28.857] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Application is shutting down...
+[2024-10-22 10:49:57.058] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Now listening on: http://localhost:5074
+[2024-10-22 10:49:57.123] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Application started. Press Ctrl+C to shut down.
+[2024-10-22 10:49:57.127] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Hosting environment: Development
+[2024-10-22 10:49:57.128] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Content root path: C:\Users\lowry\Dev\Csharp\phone-project\PhoneListingAPI
+[2024-10-22 10:50:08.939] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (71ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Active], [t].[Email], [t].[IsDeleted], [t].[PasswordHash], [t].[Username], [l].[ListingId], [l].[CreatedAt], [l].[Description], [l].[Price], [l].[Title], [l].[UserId]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Active], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[UserId] = @__userId_0
+) AS [t]
+LEFT JOIN [Listings] AS [l] ON [t].[UserId] = [l].[UserId]
+ORDER BY [t].[UserId]
+[2024-10-22 10:50:09.071] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - User -0
+[2024-10-22 10:50:09.075] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - Environmental Variable: 
+[2024-10-22 10:50:09.077] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - user information: d352dac0-4501-40c6-6300-08dcf1eb7951
+[2024-10-22 10:50:37.527] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserId] = @__userId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2024-10-22 10:50:37.767] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 4000), @p5='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Listings] ([ListingId], [CreatedAt], [Description], [Price], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2024-10-22 10:50:47.582] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Active], [t].[Email], [t].[IsDeleted], [t].[PasswordHash], [t].[Username], [l].[ListingId], [l].[CreatedAt], [l].[Description], [l].[Price], [l].[Title], [l].[UserId]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Active], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[UserId] = @__userId_0
+) AS [t]
+LEFT JOIN [Listings] AS [l] ON [t].[UserId] = [l].[UserId]
+ORDER BY [t].[UserId]
+[2024-10-22 10:50:47.600] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - User -0
+[2024-10-22 10:50:47.601] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - Environmental Variable: 
+[2024-10-22 10:50:47.603] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - user information: d352dac0-4501-40c6-6300-08dcf1eb7951
+[2024-10-22 10:53:02.198] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserId] = @__userId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2024-10-22 10:53:02.212] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 4000), @p5='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Listings] ([ListingId], [CreatedAt], [Description], [Price], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2024-10-22 10:54:08.413] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserId] = @__userId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2024-10-22 10:54:08.426] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 4000), @p5='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Listings] ([ListingId], [CreatedAt], [Description], [Price], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2024-10-22 10:54:48.843] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [l].[ListingId], [l].[CreatedAt], [l].[Description], [l].[Price], [l].[Title], [l].[UserId]
+FROM [Listings] AS [l]
+[2024-10-22 10:55:00.425] [Information] [Microsoft.EntityFrameworkCore.Database.Command] [unknown:0] [<Log>g__LoggerLog|14_0] - Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Active], [t].[Email], [t].[IsDeleted], [t].[PasswordHash], [t].[Username], [l].[ListingId], [l].[CreatedAt], [l].[Description], [l].[Price], [l].[Title], [l].[UserId]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Active], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[UserId] = @__userId_0
+) AS [t]
+LEFT JOIN [Listings] AS [l] ON [t].[UserId] = [l].[UserId]
+ORDER BY [t].[UserId]
+[2024-10-22 10:55:00.429] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - User -0
+[2024-10-22 10:55:00.431] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - Environmental Variable: 
+[2024-10-22 10:55:00.432] [Information] [PhoneListingAPI.Services.UserService] [unknown:0] [<Log>g__LoggerLog|14_0] - user information: d352dac0-4501-40c6-6300-08dcf1eb7951
+[2024-10-22 11:54:43.678] [Information] [Microsoft.Hosting.Lifetime] [unknown:0] [<Log>g__LoggerLog|14_0] - Application is shutting down...

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MhlrqsGuGIuAPeroYKBoah0ZgL3DN5ji4ZPmKx5C/sY=",
+  "Source": "PhoneListingAPI",
+  "BasePath": "_content/PhoneListingAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
