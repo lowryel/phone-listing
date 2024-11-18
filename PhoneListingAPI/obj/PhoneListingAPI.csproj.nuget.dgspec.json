@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lowry\\Dev\\Csharp\\phone-project\\PhoneListingAPI\\PhoneListingAPI.csproj": {}
+    "C:\\Users\\lowry\\Dev\\Csharp\\phone-listing\\PhoneListingAPI\\PhoneListingAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lowry\\Dev\\Csharp\\phone-project\\PhoneListingAPI\\PhoneListingAPI.csproj": {
+    "C:\\Users\\lowry\\Dev\\Csharp\\phone-listing\\PhoneListingAPI\\PhoneListingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lowry\\Dev\\Csharp\\phone-project\\PhoneListingAPI\\PhoneListingAPI.csproj",
+        "projectUniqueName": "C:\\Users\\lowry\\Dev\\Csharp\\phone-listing\\PhoneListingAPI\\PhoneListingAPI.csproj",
         "projectName": "PhoneListingAPI",
-        "projectPath": "C:\\Users\\lowry\\Dev\\Csharp\\phone-project\\PhoneListingAPI\\PhoneListingAPI.csproj",
+        "projectPath": "C:\\Users\\lowry\\Dev\\Csharp\\phone-listing\\PhoneListingAPI\\PhoneListingAPI.csproj",
         "packagesPath": "C:\\Users\\lowry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lowry\\Dev\\Csharp\\phone-project\\PhoneListingAPI\\obj\\",
+        "outputPath": "C:\\Users\\lowry\\Dev\\Csharp\\phone-listing\\PhoneListingAPI\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VHYTVktsImQ=",
+  "dgSpecHash": "4972DcOFVc8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lowry\\Dev\\Csharp\\phone-project\\PhoneListingAPI\\PhoneListingAPI.csproj",
+  "projectFilePath": "C:\\Users\\lowry\\Dev\\Csharp\\phone-listing\\PhoneListingAPI\\PhoneListingAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lowry\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lowry\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

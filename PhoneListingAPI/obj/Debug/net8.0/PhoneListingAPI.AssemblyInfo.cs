@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoneListingAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+637eb0b678efcf809b1e1ac7e0f34b67a9fc5a49")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoneListingAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoneListingAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
